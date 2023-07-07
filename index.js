@@ -1,10 +1,10 @@
 /**
  * TODO(developer): Uncomment these variables before running the sample.
  */
-const projectId = 'aiproject-388411';
+const projectId = 'xxxxxxxxxxx';
 const location = 'us'; // Format is 'us' or 'eu'
-const processorId = '8e342af64dff9d62'; // Create processor in Cloud Console
-const filePath = 'CoverPage7566.pdf';
+const processorId = 'xxxxxxxxxx'; // Create processor in Cloud Console
+const filePath = 'xxxxxxxxxxxxx';
 
 const {DocumentProcessorServiceClient} =
   require('@google-cloud/documentai').v1beta3;
