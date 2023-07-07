@@ -11,6 +11,6 @@ steps:
         'deploy',
         'aiproject-388411',
 	'--region=us-central1',
-	'--platform=managed',
+        '--platform=managed',
         '--image=gcr.io/aiproject-388411/docaiextractrep:$SHORT_SHA',
       ]
