@@ -4,12 +4,13 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/aiproject-388411/docaiextractrep:$SHORT_SHA']
 - name: 'gcr.io/cloud-builders/gcloud'
-    args:
+  args:
       [
         'beta',
         'run',
         'deploy',
-        'cloud-run-continuous-deployment-example',
+        'aiproject-388411',
+	'--region=us-central1',
+	'--platform=managed',
         '--image=gcr.io/aiproject-388411/docaiextractrep:$SHORT_SHA',
-        '--region=us-central1',
       ]
