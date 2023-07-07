@@ -1,10 +1,10 @@
 /**
  * TODO(developer): Uncomment these variables before running the sample.
  */
-const projectId = 'xxxxxxxxxxx';
-const location = 'us'; // Format is 'us' or 'eu'
-const processorId = 'xxxxxxxxxx'; // Create processor in Cloud Console
-const filePath = 'xxxxxxxxxxxxx';
+const projectId = process.env.PROJECT_ID;
+const location = 'process.env.LOCATION; // Format is 'us' or 'eu'
+const processorId = process.env.PROCESSOR_ID; // Create processor in Cloud Console
+const filePath = process.env.FILE_PATH;
 
 const {DocumentProcessorServiceClient} =
   require('@google-cloud/documentai').v1beta3;
