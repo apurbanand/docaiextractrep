@@ -1,7 +1,7 @@
 const http = require('http');
 const { processDocument } = require('./index');
 
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 8080;
 
 http.createServer(async (req, res) => {
   console.log('New connection');
